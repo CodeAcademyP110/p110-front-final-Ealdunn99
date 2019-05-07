@@ -1,0 +1,143 @@
+#Travelers{
+        padding: 100px 20px 80px;
+        background-color: rgb(238, 238, 238);
+        .name{
+            @extend .fontlato ;
+            font-size: 20px;
+            line-height: 25px;
+            color: #2d3e52;
+            padding: 20px;
+        }
+        .box{
+            width: 275px;
+            background-color: white;
+            .imgbox{
+                &:hover .overlay{
+                    transform: translate(-50% , -50%);
+                    opacity: .8;
+                    width: 100%;
+                    height: 100%;
+              }
+              &:hover img { transform: scale(1.2);}
+                position: relative;
+                .overlay{
+                    i{
+                        color: white;
+                        font-size: 55px;
+                        margin: 40%;
+                        margin-top: 22%;
+        
+                    }
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50% , -50%);
+                    opacity: 0;
+                    transition: .5s;
+                    z-index: 5;
+                    width: 50%;
+                    height: 100px;
+                    background-color: #337ab7;
+                }
+                overflow: hidden;
+            }
+            img{transition: transform .6s;
+                &:hover{ transform: scale(1.2);}
+                width: 100%;
+            }
+            .boxmini{
+                padding: 15px;
+                span{
+                    @extend .fontlato ;
+                        font-size: 20px;
+                    line-height: 20px;
+                    color:#7db921;
+        
+                    
+                    small{
+                        @extend .fontlato ;
+                        font-size: 10px;
+                    line-height: 10px;
+                    color:$grey;
+                    }
+                }
+                .box-title{
+                    
+                    @extend .fontlato ;
+                    font-size: 16px;
+                    line-height: 16px;
+                    a{color: black;}
+                    small{
+                        @extend .fontlato ;
+                        font-size: 10px;
+                    line-height: 10px;
+                    color:$grey;
+        
+                    }
+                }
+                
+                .price{
+                    float: right;
+                    display: block;
+                    text-align: right;
+                    line-height: 1;
+                }
+            }
+
+
+            .boxmini22{ padding: 10px;
+                .nun{
+                    @extend .fontlato ;
+                        font-size: 13px;
+                    line-height: 22px;
+                    color:$grey;
+                }
+                .nums{margin-left: 39.5%;
+                    @extend .fontlato ;
+                    font-size: 10px;
+                line-height: 18px;
+                color:$grey;
+                }
+                .btn2{
+                    padding: 2px 8px;
+                    text-align: center;
+                     @extend .fontlato ;
+                    font-size: 11px;
+                    // line-height: 28px;
+                    color:white;
+                    cursor: pointer;
+                    width: 35%;
+                    margin: 5px auto;
+                   
+                   
+                    background-color: grey;
+                    &:hover{
+                        background: #98ce44;
+                    }
+                
+                }
+                .btn3{@extend .btn2 ;
+                   
+                    background-color:rgb(255, 202, 78);
+                    &:hover{
+                        background: #E9B02B;
+                    }
+                
+                }
+                .lis{margin-left: 10px;
+                    i{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .box{ margin: 5px auto;}
+            .name{ margin: 5px auto;text-align: center
+            //  width: 50%;
+            }
+          }
+        
+        
+}

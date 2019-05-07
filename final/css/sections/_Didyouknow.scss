@@ -1,0 +1,44 @@
+#Didyouknow{background-color: rgb(238, 238, 238);
+padding: 30px 10px 10px;
+h2{
+    
+        padding: 10px;
+        margin-top: 80px;
+        @extend .fontlato ;
+        font-size: 24px;
+        line-height: 30px;
+        color: #2d3e52;
+    
+}
+h5{margin-top: 0px;
+    @extend h2 ;
+    font-size: 13px;
+        line-height: 22px;
+        color: $grey;
+}
+    .box{
+        background-color: white;
+     text-align: left;
+     .name{
+        font-size: 16px;
+        line-height: 22px;
+     }
+     h3{
+        font-size: 13px;
+        line-height: 20px;
+     }
+    }
+    @media only screen and (max-width: 992px) {
+        .box{
+            margin: 5px auto;
+         width: 59.2%;
+        }
+      }
+
+.btnn{margin: 20px auto 10px 1px; text-align: center;}
+.container{text-align: center;
+.row{padding: 0px}
+.col-md-6{padding: 0px;}}
+.imgbox{img{height: 100%;}}
+.pad{padding: 10px 10px 10px 23px!important;}
+}

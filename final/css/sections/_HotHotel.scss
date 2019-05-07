@@ -1,0 +1,128 @@
+#HotHotel{
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    .name{
+        @extend .fontlato ;
+        font-size: 20px;
+        line-height: 25px;
+        color: #2d3e52;
+        padding: 20px;
+    }
+    
+
+
+    .bigbox{
+        background-color: white;
+        padding: 20px;
+        ul{margin-bottom: 20px;}
+        li{ background-color: $grey;
+            cursor: pointer;
+           &:hover{ background-color: #6DACE6;}
+            color: white;
+            margin: 5px;
+            padding: 4px 13px;
+            @extend .fontlato ;
+            font-size: 14px;
+            
+
+        }
+
+        .libox{margin-bottom: 10px;
+            .imgbox{  float: left; 
+                margin-right: 20px;
+            .img1{width: 110%;
+              
+            }}
+
+            h2{  @extend .fontlato ;
+                display: inline-block;
+                font-size: 20px;
+                line-height: 25px;
+                 color: #2d3e52;
+            }
+            h3{display: inline-block;
+                width: 60%;
+                @extend .fontlato ;
+                font-size: 12px;
+                line-height: 18px;
+                 color: $grey;
+
+
+            }
+            .numbox{float: right;
+                margin-top: -30px;
+            .btnn{
+                background-color: #98CE44;
+                text-align: center;
+            }
+            h1{
+                @extend .fontlato ;
+                font-size: 20px;
+                line-height: 20px;
+                 color: #98CE44;
+            }
+            }
+          }
+
+
+
+
+
+          .img2{display: inline-block;
+            margin-left: 6px;
+              margin-top: 10px;
+              width: 74px;
+              border-radius: 100px;
+          }
+          h6{
+              padding: 13px 0px 20px;
+            @extend .fontlato ;
+            font-size: 16px;
+            line-height: 27px;
+             color: #6dace6;
+             font-style: italic;
+
+          };
+          h7{display: inline-block;
+            @extend .fontlato ;
+            font-size: 14px;
+            line-height: 16px;
+             color: #2d3e52;
+            
+
+          };
+          h8{display: inline-block;
+            @extend .fontlato ;
+            font-size: 10px;
+            line-height: 10px;
+             color: $grey;
+           
+           
+
+          }
+          .h7h8{
+              display:flex;
+              flex-direction: column;
+              margin-top: 38px;
+              margin-left:10px;
+          }
+
+
+
+
+
+
+
+
+
+    }
+
+     
+
+    @media only screen and (max-width: 992px) {
+        .bigbox{ margin: 5px auto;}
+        .name{ margin: 5px auto;text-align: center
+        //  width: 50%;
+        }
+      }
+}

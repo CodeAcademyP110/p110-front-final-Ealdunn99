@@ -1,0 +1,48 @@
+#slide{
+    margin-top: -8px;
+position: relative;
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    .window{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .lenta{
+        display: flex;
+        // width: 5600px;
+        position: relative;
+        left: 0;
+        transition: all 1.3s linear;
+    }
+    .lenta img{
+        width:  100vw;
+        height: 500px;
+        object-fit: cover;
+    }
+    .arrow_wrapper{
+        z-index: 3;
+      
+        text-align: center;
+        font-size: 1.3rem;
+        color: #555;
+        cursor: pointer;
+    }
+    .arrow_right{
+        position: absolute;
+        top: 50%;
+        right: 2%;
+    }
+    .arrow_left{
+        position: absolute;
+        top: 50%;
+        left:   2%;
+    }
+    li{padding: 0px;}
+
+}

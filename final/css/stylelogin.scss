@@ -1,0 +1,68 @@
+body{
+    background-image: radial-gradient(circle, #b056c4, #a24cb5, #9442a7, #863998, #792f8a);
+}
+
+.container{
+h1{margin: 35px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 28px;
+    color: white;
+}
+
+    margin-top: 100px;  
+    text-align: center;
+
+form{margin: 10px auto;}
+    .inputbox{padding-right: 16%;
+        max-width: 590px;
+        min-width: 300px;
+        border: 3px solid white;
+        border-radius: 100px;
+        margin: 20px auto;
+    }
+    label{&:after{
+        content: "|";
+    font-size: 0.6667em;
+    vertical-align: top;
+    margin-left: 15px;
+    }
+        padding-top: 5px;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 60px;
+    color: white;
+    }
+    input{    margin-left: 20px;
+        background:#a750bb00;
+        color: #fff;
+        outline: none;
+    border: none;}
+
+    .btn{
+        max-width: 590px;
+    min-width: 455px;
+        position: relative;
+        padding: 4px 15% 4px 11%;
+
+        border: 3px solid white;
+        border-radius: 100px;
+        margin: 20px auto;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 23px;
+        line-height: 60px;
+        color: white;
+        background-color:#E9B02B;
+        box-sizing: border-box;
+    }
+   p{color: #822e95;}
+   .fas{position: absolute;
+    top: 11px;
+    right: 15px;
+    font-size: 44px;
+
+}
+}

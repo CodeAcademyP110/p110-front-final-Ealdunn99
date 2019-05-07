@@ -1,0 +1,44 @@
+#Honeymoon{ background-image: url("../imgs/maps.jpg");
+    // background-position: 50% -27.5px;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    overflow: hidden;
+
+    h2{
+        padding: 20px;
+        margin-top: 20px;
+        @extend .fontlato ;
+        font-size: 24px;
+        line-height: 30px;
+        color: white;
+    }
+    h5{
+        padding: 10px;
+        
+        @extend .fontlato ;
+        font-size: 13px;
+        line-height: 22px;
+        color: #7c9abd;
+    }
+    .imgbox{overflow: hidden;
+    img{
+        height: 100%;
+        width: auto;
+        min-width: 100%;
+        left: 50%;
+        margin-left: -60px;
+        transition: transform .6s;
+        &:hover{ transform: scale(1.2);}
+    }}
+    img{ margin-left: -60px;    margin-bottom: -4px;}
+    .box{text-align: center;}
+
+    @media only screen and (max-width: 992px) {
+        .box{ margin: 5px auto;
+         width: 50%;
+        }
+      }
+    
+}

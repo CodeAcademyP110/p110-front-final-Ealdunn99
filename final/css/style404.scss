@@ -1,0 +1,180 @@
+@import 'lib/reset';
+@import 'lib/main';
+body{
+    background-image: radial-gradient(circle, #263446, #202c3b, #1b2430, #151c25, #0f141b);
+
+    .container{  
+        ul{li{@extend .fontlato}};
+        i{font-size: 0.82em;
+        margin-top: 6px;};
+        
+        padding: 34px 300px;
+        text-align: center;
+
+        h1{ font-style: italic;
+            font-family: Lato, Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 63px;
+            color: #fdb714;
+            padding-top: 20px;
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 300px;
+            line-height: 325px;
+            color: #01b7f2
+            ;
+
+        }
+
+
+
+    }
+
+
+
+
+
+}
+
+
+p{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+  color: #384c63;
+}
+
+
+
+.respon{
+
+}
+.head2-a{
+    text-transform: uppercase;
+    
+    letter-spacing: 0.1em;
+    a{font-size: 1em;
+      line-height: 68px;
+    padding: 0% 9%
+  }
+
+}
+.dropdown{
+    
+    color: white;
+    position: relative;
+    &:hover .dropdown-content {display: block;}
+    &:hover #megaul{display: flex; flex-direction: row}
+
+}
+.dropdown-content{bottom: 50px;
+    color: white;a{ color: white;}
+      display: none;
+      position: absolute;
+      z-index: 11;
+      a {
+        display: block;
+    }
+
+    li{
+      cursor: pointer;
+      color: white;
+      width: 220px;
+      padding: 8px;
+      @extend .fontlato;
+      &:hover{background-color: $blue;}
+      background-color: lighten( $blue, 6% ) ;
+    }
+  
+ 
+
+}
+
+
+#megaul{    margin-top: -560px;
+
+    
+
+    color: white;a{ color: white;}
+    display: none;
+    position: absolute;
+    z-index: 11;
+    a {
+      display: block;
+  }
+
+  li{
+    cursor: pointer;
+    color: white;
+    width: 250px;
+    padding: 8px;
+    @extend .fontlato;
+    &:hover{background-color: $blue;}
+    background-color: lighten( $blue, 6% ) ;
+  }
+ 
+    position: absolute;
+    left: -700px;
+    .clearfix{width: 240px;
+      li
+      {width: 220px;margin:5px;
+        a{
+      line-height: 10px;
+    }}}
+    
+
+    .menumaq{
+      width: 480px;
+      display: flex;
+      flex-direction: column;
+      .ii{
+        display: flex;
+      flex-direction: row;
+      }
+    }
+  }
+
+ 
+
+ 
+  @media only screen and (min-width: 992px) {
+    .respon{
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+
+    .respon{
+      display: none!important;
+    }
+  }
+    @media only screen and (max-width: 992px) {
+
+     .container{margin-top: 30px;
+          padding: 0px!important;
+     }
+     h2{
+            font-size: 250px!important;
+        
+     }
+     h1{
+        font-size: 43px!important;
+     }
+     .col-12{
+        padding: 0px!important;
+        margin: 0px!important;
+    }
+    .row{
+        padding: 0px!important;
+        margin: 0px!important;
+    }
+
+  }
+
+
+
